@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy</title>
+  <style>
+    :root {
+      --bg: #f7f8fa;
+      --card-bg: #ffffff;
+      --text: #1f2430;
+    --muted: #5b6472;
+    --accent: #2f6fed;
+    --border: #e6e8ec;
+      }
+  * { box-sizing: border-box; }
+  body {
+        margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+}
+  .wrap {
+        max-width: 760px;
+    margin: 0 auto;
+    padding: 40px 20px 80px;
+}
+  header.page-header {
+        text-align: center;
+    margin-bottom: 32px;
+}
+  h1 {
+        font-size: 1.9rem;
+    margin: 0 0 6px;
+    font-weight: 700;
+}
+  .updated {
+        color: var(--muted);
+    font-size: 0.92rem;
+    margin: 0;
+}
+  .lang-toggle {
+        display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 24px 0 8px;
+}
+  .lang-toggle button {
+        border: 1px solid var(--border);
+    background: var(--card-bg);
+    color: var(--text);
+    padding: 8px 18px;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+  .lang-toggle button.active {
+    background: var(--accent);
+    color: #fff;
+        border-color: var(--accent);
+  }
+  .card {
+        background: var(--card-bg);
+        border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 32px 36px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  }
+  section.policy { display: none; }
+  section.policy.active { display: block; }
+  section.policy[dir="rtl"] {
+    text-align: right;
+    font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+  }
+  h2 {
+        font-size: 1.15rem;
+    margin: 28px 0 10px;
+    color: var(--text);
+}
+  section.policy > h2:first-of-type,
+      section.policy > p:first-of-type ~ h2:first-of-type {
+        margin-top: 20px;
+}
+  p { margin: 0 0 14px; color: var(--text); }
+  ul { margin: 0 0 14px; padding-left: 22px; }
+  section.policy[dir="rtl"] ul { padding-left: 0; padding-right: 22px; }
+  li { margin-bottom: 6px; }
+  a { color: var(--accent); text-decoration: none; word-break: break-word; }
+      a:hover { text-decoration: underline; }
+  .intro { color: var(--muted); }
+  footer.page-footer {
+        text-align: center;
+    margin-top: 28px;
+    color: var(--muted);
+    font-size: 0.85rem;
+}
+  @media (max-width: 600px) {
+    .card { padding: 24px 20px; }
+    h1 { font-size: 1.5rem; }
+}
+</style>
+  </head>
+  <body>
+  <div class="wrap">
+      <header class="page-header">
+      <h1 id="titleText">Privacy Policy</h1>
+      <p class="updated" id="updatedText">Last updated: August 18, 2026</p>
+  </header>
+
+  <div class="lang-toggle">
+      <button id="btn-en" class="active" onclick="setLang('en')">English</button>
+      <button id="btn-ar" onclick="setLang('ar')">العربية</button>
+    </div>
+
+      <div class="card">
+
+      <section class="policy active" id="policy-en" dir="ltr" lang="en">
+          <p class="intro">This Privacy Policy applies to the mobile application, developed by the application owner. We respect your privacy and are committed to protecting it.</p>
+
+      <h2>1. Information Collection and Use</h2>
+      <ul>
+          <li><strong>Local Storage:</strong> The app stores user preferences (reading progress, bookmarks, font size, and theme selection) locally on your device using a local SQLite/Room database. This data never leaves your device and is not collected or transmitted to external servers.</li>
+            <li><strong>No Personal Data Collection:</strong> The app does not require registration, login, or personal information (such as name, email, address, or phone number) to read the novel.</li>
+        </ul>
+
+      <h2>2. Third-Party Services and Advertising (Google AdMob)</h2>
+      <p>The app uses Google AdMob to display banner advertisements. Google AdMob may collect and process information such as:</p>
+              <ul>
+          <li>Advertising ID (GAID)</li>
+          <li>IP address and approximate device location</li>
+        <li>Device information and network connection status</li>
+          <li>Interaction with ads</li>
+      </ul>
+      <p>This data is handled according to Google's Privacy Policy. You can learn more about how Google uses data here: <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">https://policies.google.com/technologies/ads</a></p>
+
+        <h2>3. Children's Privacy</h2>
+        <p>The app does not knowingly collect personal identifiable information from children under the age of 13.</p>
+
+        <h2>4. User Rights and Data Deletion</h2>
+      <p>Since data is stored exclusively on your device, you can delete all saved data at any time by clearing the application's storage in your device Settings or uninstalling the app.</p>
+
+              <h2>5. Contact Us</h2>
+              <p>If you have any questions or suggestions regarding our Privacy Policy, feel free to contact us at:<br>
+              Email: <a href="mailto:jabiralsaidi@gmail.com">jabiralsaidi@gmail.com</a></p>
+            </section>
+
+            <section class="policy" id="policy-ar" dir="rtl" lang="ar">
+              <p class="intro">نحن نقدر خصوصيتك ونلتزم بحمايتها. توضح هذه السياسة كيفية التعامل مع البيانات في التطبيق:</p>
+
+              <h2>1. البيانات المخزنة محلياً</h2>
+              <p>يحفظ التطبيق تقدم القراءة والإشارات المرجعية وإعدادات الخط والسمات محلياً داخل جهازك فقط. لا يتم نقل أو مشاركة هذه البيانات مع أي خوادم خارجية.</p>
+
+              <h2>2. الإعلانات وخدمات الطرف الثالث (Google AdMob)</h2>
+              <p>يستخدم التطبيق خدمة إعلانات Google AdMob لعرض إعلانات بنر ممولة. قد تجمع منصة AdMob معرّف الإعلانات المجهول للجهاز وفقاً لسياسة خصوصية إعلانات Google.</p>
+
+              <h2>3. حذف البيانات</h2>
+              <p>يمكنك مسح كافة البيانات والإشارات في أي وقت عبر مسح بيانات التطبيق من إعدادات جهازك أو إلغاء تثبيت التطبيق.</p>
+
+              <h2>4. للتواصل والاستفسارات</h2>
+              <p>البريد الإلكتروني: <a href="mailto:jabiralsaidi@gmail.com">jabiralsaidi@gmail.com</a></p>
+            </section>
+
+          </div>
+
+          <footer class="page-footer">
+            <span id="footerText">&copy; 2026. All rights reserved.</span>
+  </footer>
+</div>
+
+<script>
+  function setLang(lang) {
+    document.getElementById('policy-en').classList.toggle('active', lang === 'en');
+    document.getElementById('policy-ar').classList.toggle('active', lang === 'ar');
+    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    document.getElementById('btn-ar').classList.toggle('active', lang === 'ar');
+
+    if (lang === 'en') {
+      document.getElementById('titleText').textContent = 'Privacy Policy';
+      document.getElementById('updatedText').textContent = 'Last updated: August 18, 2026';
+      document.documentElement.setAttribute('lang', 'en');
+      document.documentElement.setAttribute('dir', 'ltr');
+    } else {
+      document.getElementById('titleText').textContent = 'سياسة الخصوصية';
+      document.getElementById('updatedText').textContent = 'تاريخ التحديث: 18 أغسطس 2026';
+      document.documentElement.setAttribute('lang', 'ar');
+      document.documentElement.setAttribute('dir', 'rtl');
+    }
+      }
+</script>
+  </body>
+  </html>
+  
